@@ -101,6 +101,24 @@ export const projects = [
     ]
   },
   {
+    id: 8,
+    title: "MIC-ELMS - Employee Leave Management System",
+    description: "A comprehensive and responsive web application for managing employee leave requests, designed specifically for educational institutions with role-based access control for administrators, department heads, and employees.",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "JWT", "Axios", "Vercel"],
+    github: "https://github.com/Nagur-Meera/MIC-Employee_Leave_Management_System",
+    demo: "https://mic-employee-leave-management-syste-ebon.vercel.app/",
+    image: "mic-elms.svg",
+    category: "Full Stack",
+    featured: true,
+    highlights: [
+      "Role-based access control (Admin, HOD, Employee)",
+      "Multi-level approval workflow",
+      "Mobile-optimized responsive design",
+      "Dashboard with key metrics and visualizations",
+      "Document attachment support and Excel exports"
+    ]
+  },
+  {
     id: 2,
     title: "TracFac - Student-Faculty Tracking and Communication System",
     description: "Centralized web-based platform to streamline academic communication, program management, and student-faculty interactions within educational institutions using modern MERN stack architecture.",
@@ -253,6 +271,12 @@ export const certifications = [
     name: "Foundations of Cybersecurity",
     issuer: "Coursera",
     icon: "🔐"
+  }
+  ,
+  {
+    name: "AWS Fundamentals",
+    issuer: "Amazon Web Services",
+    icon: "☁️"
   }
 ];
 

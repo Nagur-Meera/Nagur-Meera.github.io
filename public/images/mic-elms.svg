@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="600px" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>MIC-ELMS Logo</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="gradient1">
+            <stop stop-color="#3B82F6" offset="0%"></stop>
+            <stop stop-color="#8B5CF6" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="gradient2">
+            <stop stop-color="#10B981" offset="0%"></stop>
+            <stop stop-color="#3B82F6" offset="100%"></stop>
+        </linearGradient>
+        <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="10" />
+            <feOffset dx="0" dy="0" result="offsetblur" />
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.3" />
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <!-- Background circles -->
+        <circle cx="400" cy="300" r="200" fill="url(#gradient1)" opacity="0.1"></circle>
+        <circle cx="400" cy="300" r="150" fill="url(#gradient2)" opacity="0.15"></circle>
+        
+        <!-- Calendar base -->
+        <rect x="250" y="150" width="300" height="300" rx="20" fill="#1F2937" filter="url(#shadow)"></rect>
+        <rect x="250" y="150" width="300" height="60" rx="20" fill="#111827"></rect>
+        <rect x="250" y="150" width="300" height="300" rx="20" stroke="#4B5563" stroke-width="2" fill="none"></rect>
+        
+        <!-- Calendar header -->
+        <text x="400" y="187" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">MIC-ELMS</text>
+        
+        <!-- Calendar days -->
+        <rect x="270" y="230" width="50" height="50" rx="8" fill="#374151"></rect>
+        <rect x="330" y="230" width="50" height="50" rx="8" fill="#10B981"></rect>
+        <rect x="390" y="230" width="50" height="50" rx="8" fill="#374151"></rect>
+        <rect x="450" y="230" width="50" height="50" rx="8" fill="#3B82F6"></rect>
+        <rect x="270" y="290" width="50" height="50" rx="8" fill="#8B5CF6"></rect>
+        <rect x="330" y="290" width="50" height="50" rx="8" fill="#374151"></rect>
+        <rect x="390" y="290" width="50" height="50" rx="8" fill="#EC4899"></rect>
+        <rect x="450" y="290" width="50" height="50" rx="8" fill="#374151"></rect>
+        <rect x="270" y="350" width="50" height="50" rx="8" fill="#374151"></rect>
+        <rect x="330" y="350" width="50" height="50" rx="8" fill="#F59E0B"></rect>
+        <rect x="390" y="350" width="50" height="50" rx="8" fill="#374151"></rect>
+        <rect x="450" y="350" width="50" height="50" rx="8" fill="#6366F1"></rect>
+        
+        <!-- User icon -->
+        <circle cx="520" cy="115" r="40" fill="#3B82F6" opacity="0.8"></circle>
+        <circle cx="520" cy="100" r="15" fill="white"></circle>
+        <path d="M490,130 Q520,160 550,130" fill="white"></path>
+        
+        <!-- Mobile device -->
+        <rect x="170" y="200" width="100" height="180" rx="15" fill="#1F2937" filter="url(#shadow)"></rect>
+        <rect x="175" y="205" width="90" height="170" rx="12" fill="#111827"></rect>
+        <rect x="175" y="205" width="90" height="40" rx="5" fill="#10B981"></rect>
+        <rect x="185" y="255" width="70" height="10" rx="2" fill="#374151"></rect>
+        <rect x="185" y="275" width="70" height="10" rx="2" fill="#374151"></rect>
+        <rect x="185" y="295" width="70" height="10" rx="2" fill="#374151"></rect>
+        <rect x="185" y="315" width="40" height="20" rx="5" fill="#3B82F6"></rect>
+        <circle cx="220" cy="225" r="10" fill="white" opacity="0.8"></circle>
+        <text x="220" y="229" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#111827" text-anchor="middle">MIC</text>
+    </g>
+</svg>

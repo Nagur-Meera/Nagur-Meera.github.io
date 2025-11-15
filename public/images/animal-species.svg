@@ -1,0 +1,269 @@
+<svg width="320" height="240" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Overall background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Brain / central node -->
+    <linearGradient id="brainColor" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ec4899;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Animal gradients with enhanced colors -->
+    <linearGradient id="elephantColor" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="lionColor" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="birdColor" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="fishColor" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Prediction / UI gradients -->
+    <linearGradient id="predictionColor" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="cameraColor" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Enhanced UI gradient -->
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1f2937;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#111827;stop-opacity:0.95" />
+    </linearGradient>
+
+    <!-- Filters for shadows and glows -->
+    <filter id="dropShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background with subtle pattern -->
+  <rect width="320" height="240" fill="url(#bg)" rx="16"/>
+  
+  <!-- Decorative border -->
+  <rect width="316" height="236" x="2" y="2" fill="none" stroke="url(#brainColor)" stroke-width="1" rx="14" opacity="0.3"/>
+  
+  <!-- Title with enhanced styling -->
+  <text x="160" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle" filter="url(#softGlow)">
+    Animal Species Recognition
+  </text>
+  <text x="160" y="40" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">
+    ResNet50 • 91.87% Accuracy • 40 Species
+  </text>
+  
+  <!-- Enhanced Animal Icons with better shapes and shadows -->
+  
+  <!-- Elephant (Purple) with enhanced design -->
+  <g transform="translate(35, 65)" filter="url(#dropShadow)">
+    <ellipse cx="20" cy="16" rx="14" ry="11" fill="url(#elephantColor)" opacity="0.9"/>
+    <ellipse cx="20" cy="14" rx="12" ry="9" fill="url(#elephantColor)"/>
+    <!-- Eyes -->
+    <circle cx="16" cy="11" r="2" fill="#ffffff"/>
+    <circle cx="24" cy="11" r="2" fill="#ffffff"/>
+    <circle cx="16" cy="11" r="0.8" fill="#000000"/>
+    <circle cx="24" cy="11" r="0.8" fill="#000000"/>
+    <!-- Trunk -->
+    <path d="M20,20 Q12,28 16,35 Q20,33 18,30" stroke="url(#elephantColor)" stroke-width="2.5" fill="none"/>
+    <!-- Tusks -->
+    <path d="M14,18 Q12,22 14,26" stroke="#ffffff" stroke-width="1.5" fill="none"/>
+    <path d="M26,18 Q28,22 26,26" stroke="#ffffff" stroke-width="1.5" fill="none"/>
+    <text x="20" y="50" font-family="Arial, sans-serif" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="bold">Elephant</text>
+  </g>
+  
+  <!-- Lion (Orange) with enhanced mane -->
+  <g transform="translate(115, 65)" filter="url(#dropShadow)">
+    <!-- Mane -->
+    <circle cx="20" cy="16" r="14" fill="url(#lionColor)" opacity="0.6"/>
+    <circle cx="20" cy="16" r="16" fill="none" stroke="url(#lionColor)" stroke-width="2.5" opacity="0.4"/>
+    <!-- Face -->
+    <circle cx="20" cy="16" r="9" fill="url(#lionColor)"/>
+    <!-- Eyes -->
+    <circle cx="16" cy="13" r="2" fill="#ffffff"/>
+    <circle cx="24" cy="13" r="2" fill="#ffffff"/>
+    <circle cx="16" cy="13" r="0.8" fill="#000000"/>
+    <circle cx="24" cy="13" r="0.8" fill="#000000"/>
+    <!-- Nose -->
+    <path d="M18,19 Q20,21 22,19" stroke="#ffffff" stroke-width="1.5" fill="none"/>
+    <ellipse cx="20" cy="18" rx="1.5" ry="0.8" fill="#000000"/>
+    <text x="20" y="50" font-family="Arial, sans-serif" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="bold">Lion</text>
+  </g>
+  
+  <!-- Bird (Green) with enhanced wings -->
+  <g transform="translate(195, 65)" filter="url(#dropShadow)">
+    <!-- Body -->
+    <ellipse cx="20" cy="18" rx="6" ry="9" fill="url(#birdColor)"/>
+    <!-- Head -->
+    <circle cx="20" cy="10" r="5" fill="url(#birdColor)"/>
+    <!-- Wings -->
+    <ellipse cx="12" cy="16" rx="5" ry="8" fill="url(#birdColor)" opacity="0.8"/>
+    <ellipse cx="28" cy="16" rx="5" ry="8" fill="url(#birdColor)" opacity="0.8"/>
+    <!-- Eye -->
+    <circle cx="22" cy="8" r="1.5" fill="#ffffff"/>
+    <circle cx="22" cy="8" r="0.7" fill="#000000"/>
+    <!-- Beak -->
+    <path d="M24,10 L28,9 L24,12 Z" fill="#f59e0b"/>
+    <!-- Tail -->
+    <ellipse cx="20" cy="26" rx="3" ry="5" fill="url(#birdColor)" opacity="0.7"/>
+    <text x="20" y="50" font-family="Arial, sans-serif" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="bold">Bird</text>
+  </g>
+  
+  <!-- Fish (Blue) with enhanced fins -->
+  <g transform="translate(255, 65)" filter="url(#dropShadow)">
+    <!-- Body -->
+    <ellipse cx="16" cy="16" rx="12" ry="6" fill="url(#fishColor)"/>
+    <!-- Tail -->
+    <path d="M28,16 L36,10 L36,22 Z" fill="url(#fishColor)"/>
+    <!-- Top fin -->
+    <path d="M12,10 L16,4 L20,10" fill="url(#fishColor)" opacity="0.8"/>
+    <!-- Bottom fin -->
+    <path d="M12,22 L16,28 L20,22" fill="url(#fishColor)" opacity="0.8"/>
+    <!-- Eye -->
+    <circle cx="22" cy="14" r="2.5" fill="#ffffff"/>
+    <circle cx="22" cy="14" r="1.2" fill="#000000"/>
+    <!-- Scales pattern -->
+    <circle cx="14" cy="14" r="0.8" fill="#ffffff" opacity="0.3"/>
+    <circle cx="18" cy="18" r="0.8" fill="#ffffff" opacity="0.3"/>
+    <circle cx="21" cy="16" r="0.8" fill="#ffffff" opacity="0.3"/>
+    <text x="20" y="50" font-family="Arial, sans-serif" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="bold">Fish</text>
+  </g>
+  
+  <!-- Enhanced Neural Network Center -->
+  <g transform="translate(140, 130)" filter="url(#glow)">
+    <!-- Outer glow ring -->
+    <circle cx="16" cy="16" r="24" fill="none" stroke="url(#brainColor)" stroke-width="1.5" opacity="0.3"/>
+    <!-- Main processing area -->
+    <circle cx="16" cy="16" r="20" fill="url(#brainColor)" opacity="0.2"/>
+    <!-- Inner core -->
+    <circle cx="16" cy="16" r="14" fill="url(#brainColor)" opacity="0.4"/>
+    
+    <!-- Neural nodes with enhanced styling -->
+    <circle cx="12" cy="12" r="3" fill="url(#brainColor)" filter="url(#softGlow)"/>
+    <circle cx="20" cy="12" r="3" fill="url(#brainColor)" filter="url(#softGlow)"/>
+    <circle cx="16" cy="20" r="3" fill="url(#brainColor)" filter="url(#softGlow)"/>
+    <circle cx="10" cy="20" r="2.5" fill="url(#brainColor)" opacity="0.8"/>
+    <circle cx="22" cy="20" r="2.5" fill="url(#brainColor)" opacity="0.8"/>
+    
+    <!-- Neural connections -->
+    <line x1="12" y1="12" x2="20" y2="12" stroke="url(#brainColor)" stroke-width="1.5" opacity="0.6"/>
+    <line x1="12" y1="12" x2="16" y2="20" stroke="url(#brainColor)" stroke-width="1.5" opacity="0.6"/>
+    <line x1="20" y1="12" x2="16" y2="20" stroke="url(#brainColor)" stroke-width="1.5" opacity="0.6"/>
+    
+    <text x="16" y="48" font-family="Arial, sans-serif" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="bold">AI Processing</text>
+  </g>
+  
+  <!-- Enhanced Prediction Results Panel -->
+  <g transform="translate(35, 185)" filter="url(#dropShadow)">
+    <rect x="0" y="0" width="250" height="45" rx="10" fill="url(#cardBg)" stroke="url(#predictionColor)" stroke-width="1"/>
+    
+    <!-- Header -->
+    <text x="12" y="16" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="url(#predictionColor)">
+      Prediction Results:
+    </text>
+    
+    <!-- Enhanced prediction bars with animations -->
+    <g transform="translate(12, 20)">
+      <!-- Lion prediction -->
+      <rect x="0" y="0" width="72" height="6" fill="url(#lionColor)" rx="3" filter="url(#softGlow)"/>
+      <text x="76" y="5" font-family="Arial, sans-serif" font-size="8" fill="#ffffff" font-weight="bold">Lion 87.3%</text>
+      
+      <!-- Tiger prediction -->
+      <rect x="125" y="0" width="52" height="6" fill="url(#fishColor)" rx="3" opacity="0.8"/>
+      <text x="181" y="5" font-family="Arial, sans-serif" font-size="8" fill="#ffffff">Tiger 9.2%</text>
+      
+      <!-- Cat prediction -->
+      <rect x="0" y="10" width="28" height="5" fill="url(#birdColor)" rx="2.5" opacity="0.7"/>
+      <text x="32" y="14" font-family="Arial, sans-serif" font-size="7" fill="#ffffff">Cat 2.1%</text>
+      
+      <!-- Other prediction -->
+      <rect x="125" y="10" width="14" height="5" fill="url(#elephantColor)" rx="2.5" opacity="0.6"/>
+      <text x="143" y="14" font-family="Arial, sans-serif" font-size="7" fill="#ffffff">Other 1.4%</text>
+    </g>
+  </g>
+  
+  <!-- Enhanced Camera Icon -->
+  <g transform="translate(275, 120)" filter="url(#dropShadow)">
+    <!-- Camera body -->
+    <rect x="0" y="4" width="24" height="18" rx="3" fill="url(#cameraColor)" stroke="url(#cameraColor)" stroke-width="1"/>
+    <!-- Lens outer ring -->
+    <circle cx="12" cy="13" r="6" fill="none" stroke="url(#cameraColor)" stroke-width="2.5"/>
+    <!-- Lens inner -->
+    <circle cx="12" cy="13" r="4" fill="url(#cameraColor)"/>
+    <circle cx="12" cy="13" r="2.5" fill="#1a1a1a"/>
+    <circle cx="13" cy="12" r="0.8" fill="#ffffff" opacity="0.6"/>
+    <!-- Flash -->
+    <rect x="20" y="6" width="3" height="3" rx="1" fill="#ffffff" opacity="0.9"/>
+    <!-- Viewfinder -->
+    <rect x="4" y="2" width="6" height="2.5" rx="1" fill="url(#cameraColor)" opacity="0.8"/>
+    
+    <text x="12" y="34" font-family="Arial, sans-serif" font-size="7" fill="#ffffff" text-anchor="middle" font-weight="bold">Input</text>
+  </g>
+  
+  <!-- Enhanced Connecting Lines with animation effect -->
+  <g opacity="0.7">
+    <line x1="55" y1="120" x2="140" y2="140" stroke="url(#elephantColor)" stroke-width="1.5" stroke-dasharray="4,2"/>
+    <line x1="135" y1="120" x2="148" y2="140" stroke="url(#lionColor)" stroke-width="1.5" stroke-dasharray="4,2"/>
+    <line x1="215" y1="120" x2="164" y2="140" stroke="url(#birdColor)" stroke-width="1.5" stroke-dasharray="4,2"/>
+    <line x1="275" y1="120" x2="172" y2="140" stroke="url(#fishColor)" stroke-width="1.5" stroke-dasharray="4,2"/>
+    
+    <!-- Connection from camera -->
+    <line x1="275" y1="132" x2="176" y2="140" stroke="url(#cameraColor)" stroke-width="1.5" stroke-dasharray="3,1.5" opacity="0.8"/>
+  </g>
+  
+  <!-- Enhanced Accuracy Badge -->
+  <g transform="translate(255, 165)" filter="url(#glow)">
+    <circle cx="0" cy="0" r="22" fill="url(#predictionColor)" stroke="#10b981" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="19" fill="none" stroke="#ffffff" stroke-width="0.8" opacity="0.3"/>
+    
+    <text x="0" y="-4" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle">91.87%</text>
+    <text x="0" y="6" font-family="Arial, sans-serif" font-size="5" fill="#ffffff" text-anchor="middle" font-weight="bold">ACCURACY</text>
+    
+    <!-- Decorative elements -->
+    <circle cx="-12" cy="-12" r="1.5" fill="#10b981" opacity="0.6"/>
+    <circle cx="12" cy="-12" r="1.5" fill="#06b6d4" opacity="0.6"/>
+    <circle cx="0" cy="14" r="1.2" fill="#3b82f6" opacity="0.6"/>
+  </g>
+  
+</svg>

@@ -1,0 +1,103 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1f2937;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c2d12;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="spotlight" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.2" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bg6)" rx="15"/>
+  
+  <!-- Movie Screen -->
+  <rect x="80" y="50" width="240" height="140" fill="#000000" rx="8" stroke="#374151" stroke-width="3"/>
+  
+  <!-- Movie Playing -->
+  <rect x="90" y="60" width="220" height="120" fill="url(#spotlight)" rx="4"/>
+  
+  <!-- Film Strip -->
+  <rect x="50" y="40" width="20" height="160" fill="#374151"/>
+  <rect x="52" y="50" width="16" height="12" fill="#000000"/>
+  <rect x="52" y="70" width="16" height="12" fill="#000000"/>
+  <rect x="52" y="90" width="16" height="12" fill="#000000"/>
+  <rect x="52" y="110" width="16" height="12" fill="#000000"/>
+  <rect x="52" y="130" width="16" height="12" fill="#000000"/>
+  <rect x="52" y="150" width="16" height="12" fill="#000000"/>
+  <rect x="52" y="170" width="16" height="12" fill="#000000"/>
+  <rect x="52" y="190" width="16" height="12" fill="#000000"/>
+  
+  <rect x="330" y="40" width="20" height="160" fill="#374151"/>
+  <rect x="332" y="50" width="16" height="12" fill="#000000"/>
+  <rect x="332" y="70" width="16" height="12" fill="#000000"/>
+  <rect x="332" y="90" width="16" height="12" fill="#000000"/>
+  <rect x="332" y="110" width="16" height="12" fill="#000000"/>
+  <rect x="332" y="130" width="16" height="12" fill="#000000"/>
+  <rect x="332" y="150" width="16" height="12" fill="#000000"/>
+  <rect x="332" y="170" width="16" height="12" fill="#000000"/>
+  <rect x="332" y="190" width="16" height="12" fill="#000000"/>
+  
+  <!-- Movie Icons on Screen -->
+  <rect x="120" y="80" width="40" height="25" fill="#dc2626" rx="4"/>
+  <text x="140" y="95" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="8">ACTION</text>
+  
+  <rect x="180" y="80" width="40" height="25" fill="#2563eb" rx="4"/>
+  <text x="200" y="95" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="8">DRAMA</text>
+  
+  <rect x="240" y="80" width="40" height="25" fill="#10b981" rx="4"/>
+  <text x="260" y="95" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="8">COMEDY</text>
+  
+  <rect x="120" y="130" width="40" height="25" fill="#7c2d12" rx="4"/>
+  <text x="140" y="145" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="8">HORROR</text>
+  
+  <rect x="180" y="130" width="40" height="25" fill="#7c3aed" rx="4"/>
+  <text x="200" y="145" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="8">SCI-FI</text>
+  
+  <rect x="240" y="130" width="40" height="25" fill="#f59e0b" rx="4"/>
+  <text x="260" y="145" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="8">ROMANCE</text>
+  
+  <!-- User Profiles -->
+  <circle cx="80" cy="230" r="20" fill="#3b82f6"/>
+  <circle cx="75" cy="225" r="6" fill="#ffffff"/>
+  <path d="M65 240 C65 235 70 230 80 230 C90 230 95 235 95 240" stroke="#ffffff" stroke-width="2" fill="none"/>
+  
+  <circle cx="150" cy="230" r="20" fill="#ef4444"/>
+  <circle cx="145" cy="225" r="6" fill="#ffffff"/>
+  <path d="M135 240 C135 235 140 230 150 230 C160 230 165 235 165 240" stroke="#ffffff" stroke-width="2" fill="none"/>
+  
+  <circle cx="220" cy="230" r="20" fill="#10b981"/>
+  <circle cx="215" cy="225" r="6" fill="#ffffff"/>
+  <path d="M205 240 C205 235 210 230 220 230 C230 230 235 235 235 240" stroke="#ffffff" stroke-width="2" fill="none"/>
+  
+  <!-- Recommendation Arrows -->
+  <path d="M100 230 Q125 220 145 230" stroke="#fbbf24" stroke-width="2" fill="none" marker-end="url(#arrowhead2)"/>
+  <path d="M170 230 Q195 220 215 230" stroke="#fbbf24" stroke-width="2" fill="none" marker-end="url(#arrowhead2)"/>
+  
+  <defs>
+    <marker id="arrowhead2" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#fbbf24"/>
+    </marker>
+  </defs>
+  
+  <!-- Rating Stars -->
+  <g transform="translate(280, 220)">
+    <polygon points="10,2 12,8 18,8 13,12 15,18 10,14 5,18 7,12 2,8 8,8" fill="#fbbf24"/>
+    <polygon points="25,2 27,8 33,8 28,12 30,18 25,14 20,18 22,12 17,8 23,8" fill="#fbbf24"/>
+    <polygon points="40,2 42,8 48,8 43,12 45,18 40,14 35,18 37,12 32,8 38,8" fill="#fbbf24"/>
+    <polygon points="55,2 57,8 63,8 58,12 60,18 55,14 50,18 52,12 47,8 53,8" fill="#fbbf24"/>
+    <polygon points="70,2 72,8 78,8 73,12 75,18 70,14 65,18 67,12 62,8 68,8" fill="#e5e7eb"/>
+  </g>
+  
+  <!-- Algorithm Visualization -->
+  <rect x="300" y="50" width="80" height="40" fill="#000000" opacity="0.8" rx="8"/>
+  <text x="340" y="65" text-anchor="middle" fill="#10b981" font-family="Arial, sans-serif" font-size="10" font-weight="bold">Collaborative</text>
+  <text x="340" y="77" text-anchor="middle" fill="#10b981" font-family="Arial, sans-serif" font-size="10" font-weight="bold">Filtering</text>
+  <text x="340" y="87" text-anchor="middle" fill="#fbbf24" font-family="Arial, sans-serif" font-size="8">70% Rating + 30% Views</text>
+  
+  <!-- Title -->
+  <text x="200" y="275" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="18" font-weight="bold">Movie Recommendation System</text>
+  <text x="200" y="290" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" opacity="0.8">Collaborative Filtering Algorithm</text>
+</svg>
